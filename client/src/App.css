@@ -1,8 +1,8 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: #fff;
-  color: #212121;
+  background: #212121;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
@@ -19,15 +19,16 @@ body {
   text-align: center;
 }
 
+
 .joinChatContainer h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .joinChatContainer input {
   width: 210px;
   height: 40px;
   margin: 7px;
-  border: 2px solid #43a047;
+  border: 2px solid #2fb1cf;
   border-radius: 5px;
   padding: 5px;
   font-size: 16px;
@@ -41,18 +42,19 @@ body {
   border-radius: 5px;
   padding: 5px;
   font-size: 16px;
-  background: #43a047;
+  background: #34c5db;
   color: #fff;
   cursor: pointer;
 }
 
 .joinChatContainer button:hover {
-  background: #2e7d32;
+  background: #34c5db;
 }
 
 .chat-window {
   width: 300px;
   height: 420px;
+  
 }
 
 .chat-window p {
@@ -61,14 +63,14 @@ body {
 .chat-window .chat-header {
   height: 45px;
   border-radius: 6px;
-  background: #263238;
+  background: #263238; 
   position: relative;
   cursor: pointer;
 }
 .chat-window .chat-header p {
   display: block;
   padding: 0 1em 0 2em;
-  color: #fff;
+  color: #838080;
   font-weight: 700;
   line-height: 45px;
 }
@@ -76,7 +78,7 @@ body {
 .chat-window .chat-body {
   height: calc(450px - (45px + 70px));
   border: 1px solid #263238;
-  background: #fff;
+  background: #838080;
 
   position: relative;
 }
@@ -101,7 +103,7 @@ body {
   height: auto;
   min-height: 40px;
   max-width: 120px;
-  background-color: #43a047;
+  background-color: #34c5db;
   border-radius: 5px;
   color: white;
   display: flex;
@@ -114,31 +116,32 @@ body {
   word-break: break-word;
 }
 
-#you {
+#other {
   justify-content: flex-start;
 }
 
-#you .message-content {
+#other .message-content {
   justify-content: flex-start;
 }
 
-#you .message-meta {
+#other .message-meta {
   justify-content: flex-start;
   margin-left: 5px;
 }
 
-#other {
+#you {
   justify-content: flex-end;
 }
 
-#other .message-content {
+#you .message-content {
   justify-content: flex-end;
-  background-color: cornflowerblue;
+  background-color: rgb(115, 45, 228);
 }
 
-#other .message-meta {
+#you .message-meta {
   justify-content: flex-end;
   margin-right: 5px;
+  color: black;
 }
 
 .message-meta #author {
@@ -180,11 +183,11 @@ body {
   background: transparent;
   outline: none;
   font-size: 25px;
-  color: lightgray;
+  color: rgb(104, 101, 101);
 }
 
 .chat-window .chat-footer button:hover {
-  color: #43a047;
+  color: #34c5db;
 }
 .hide {
   opacity: 0 !important;

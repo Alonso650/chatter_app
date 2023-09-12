@@ -71,7 +71,7 @@ function Chat({socket, userid, chatRoom}){
                  onKeyDown={(event) => {event.key === "Enter" && sendMessage();
                 }}
                 />
-                <button onClick={sendMessage}>&#9658;</button>
+                <button onClick={sendMessage}>&#10161;</button>
             </div>
         </div>
     )
